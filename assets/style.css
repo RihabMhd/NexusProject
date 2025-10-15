@@ -1,7 +1,9 @@
 body {
   background-color: #0A0A0F;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Jersey 10", sans-serif;
   color: #fff;
 }
 
@@ -20,7 +22,7 @@ nav {
 
 .logo {
   color: #00D9FF;
-  font-size: 1.8rem;
+  font-size: 1.9rem;
   font-weight: 700;
   letter-spacing: 2px;
 }
@@ -37,12 +39,18 @@ nav {
   text-decoration: none;
   color: #B8B8C0;
   font-weight: 500;
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
   position: relative;
 }
 
-
+.navbar li:last-child a {
+  color: #00D9FF;
+  box-shadow: 0 0 25px #00D9FF;
+  padding: 6px;
+  border-radius: 10px;
+  
+}
 .navbar li a:hover {
   color: #00D9FF;
   text-shadow: 0 0 10px #00D9FF;
@@ -100,7 +108,6 @@ nav {
 
 .hero img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: center;
   display: block;
@@ -123,10 +130,11 @@ nav {
 
 .overlay h1,
 .text h1 {
-  font-size: 3.5rem;
+  font-size: 5rem;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.2;
+  margin-top: -4rem;
   text-shadow: 0 4px 20px rgba(0, 217, 255, 0.3);
 }
 
@@ -137,6 +145,7 @@ nav {
   color: #C5C5D0;
   margin-bottom: 40px;
   line-height: 1.6;
+  letter-spacing: 0.2rem;
 }
 
 .hero-buttons,
@@ -169,12 +178,13 @@ nav {
   border: none;
   padding: 15px 35px;
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
   display: inline-block;
+  letter-spacing: 0.2rem;
 }
 
 .btn-primary {
@@ -208,14 +218,23 @@ section {
   text-align: center;
   font-size: 2.5rem;
   color: #fff;
-  margin-bottom: 60px;
   font-weight: 700;
   position: relative;
   display: inline-block;
   width: 100%;
 }
 
-
+span {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #fff;
+  margin-bottom: 40px;
+  font-weight: 200;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  letter-spacing: 2px;
+}
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -311,7 +330,7 @@ section {
   font-size: 1.4rem;
   color: #FFFFFF;
   margin: 0 0 10px 0;
-  font-weight: 700;
+  font-weight: 200;
   padding: 0;
 }
 
@@ -345,7 +364,7 @@ section {
   font-size: 1.15rem;
   color: #FFFFFF;
   margin: 0;
-  font-weight: 600;
+  font-weight: 200;
   line-height: 1.4;
 }
 
@@ -440,8 +459,38 @@ section {
 .signin-card p {
   color: #C5C5D0;
   margin-bottom: 35px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 1.6;
+}
+form {
+  background-color: #101018;
+  padding: 20px;
+  border-radius: 20px;
+  width: 50%;
+}
+.Contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20rem;
+}
+form label {
+  font-size: 1.2rem;
+}
+form input {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #14141E;
+  color: #b0b0b0;
+}
+form textarea {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #14141E;
+  color: #b0b0b0;
+}
+form div {
+  padding-bottom: 10px;
 }
 
 footer {
@@ -508,8 +557,8 @@ footer {
 }
 
 .FooterParents label {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #ffffff;
   margin-bottom: 20px;
   display: block;
@@ -524,7 +573,7 @@ footer {
   color: #b0b0b0;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 14px;
+  font-size: 1.2rem;
 }
 
 .FooterParents ul li:hover {
