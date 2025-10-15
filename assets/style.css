@@ -49,8 +49,9 @@ nav {
   box-shadow: 0 0 25px #00D9FF;
   padding: 6px;
   border-radius: 10px;
-  
+
 }
+
 .navbar li a:hover {
   color: #00D9FF;
   text-shadow: 0 0 10px #00D9FF;
@@ -98,12 +99,14 @@ nav {
 .hero {
   position: relative;
   width: 100%;
+  min-height: 100vh;
   height: 800px;
   margin-top: -80px;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 0;
 }
 
 .hero img {
@@ -235,6 +238,7 @@ span {
   width: 100%;
   letter-spacing: 2px;
 }
+
 .card-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -462,33 +466,42 @@ span {
   font-size: 1.2rem;
   line-height: 1.6;
 }
+
 form {
   background-color: #101018;
   padding: 20px;
   border-radius: 20px;
-  width: 50%;
+  width: 50rem;
+
 }
+
 .Contact {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: -20rem;
+  position: relative;
+  margin-top: -22rem;
+  padding-top: 4rem;
 }
+
 form label {
   font-size: 1.2rem;
 }
+
 form input {
   width: 100%;
   border-radius: 10px;
   background-color: #14141E;
   color: #b0b0b0;
 }
+
 form textarea {
   width: 100%;
   border-radius: 10px;
   background-color: #14141E;
   color: #b0b0b0;
 }
+
 form div {
   padding-bottom: 10px;
 }
@@ -500,39 +513,28 @@ footer {
   border-top: 1px solid #00D9FF;
 }
 
+footer p {
+  width: 20rem;
+}
+
 .FooterParents {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 0 30px 0 30px;
   padding: 0 40px 50px 40px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 60px;
   flex-wrap: wrap;
 }
 
-.FooterParents>div {
-  flex: 1;
-  min-width: 200px;
-}
 
-.FooterParents>div:first-child {
-  flex: 1.5;
-  max-width: 350px;
-}
 
-.FooterParents>div:first-child p {
-  color: #b0b0b0;
-  line-height: 1.6;
-  margin-bottom: 20px;
-  font-size: 14px;
-}
-
-.social-icons {
+.Footer-social-media {
   display: flex;
   gap: 15px;
 }
 
-.social-icons div {
+.Footer-social-media a {
   width: 40px;
   height: 40px;
   background: #242424;
@@ -543,25 +545,18 @@ footer {
   cursor: pointer;
   transition: all 0.3s ease;
   border: 1px solid #2a2a2a;
+  text-decoration: none;
 }
 
-.social-icons div:hover {
-  background: #7c3aed;
-  border-color: #7c3aed;
+.Footer-social-media a:hover {
+  background: #00D9FF;
+  border-color: #00D9FF;
   transform: translateY(-3px);
 }
 
 .social-icons i {
   color: #e0e0e0;
   font-size: 18px;
-}
-
-.FooterParents label {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: #ffffff;
-  margin-bottom: 20px;
-  display: block;
 }
 
 .FooterParents ul {
@@ -573,7 +568,11 @@ footer {
   color: #b0b0b0;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-size: 1.2rem;
+  font-size: 1rem;
+}
+
+.pages ul li a {
+  text-decoration: none;
 }
 
 .FooterParents ul li:hover {
@@ -582,15 +581,16 @@ footer {
 }
 
 .contact-info {
-  max-width: 1400px;
   margin: 0 auto;
-  padding: 40px 40px;
+  padding: 20px 20px;
+  width: 60rem;
   display: flex;
-  justify-content: space-between;
-  border-top: 1px solid #242424;
-  border-bottom: 1px solid #242424;
-  gap: 40px;
-  flex-wrap: wrap;
+  gap: 90px;
+}
+
+.contact-info a {
+  text-decoration: none;
+  letter-spacing: 2px;
 }
 
 .contact-item {
@@ -602,23 +602,9 @@ footer {
 }
 
 .contact-item i {
-  color: #7c3aed;
-  font-size: 20px;
+  color: #00D9FF;
+  font-size: 1rem;
   margin-bottom: 5px;
-}
-
-.contact-item label:first-of-type {
-  font-size: 13px;
-  color: #808080;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.contact-item label:last-of-type {
-  font-size: 15px;
-  color: #e0e0e0;
-  font-weight: 400;
 }
 
 .copyright {
@@ -639,7 +625,7 @@ footer {
 
 .copyright p {
   color: #808080;
-  font-size: 13px;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -651,7 +637,7 @@ footer {
 .footer-links a {
   color: #808080;
   text-decoration: none;
-  font-size: 13px;
+  font-size: 1rem;
   transition: color 0.3s ease;
 }
 
