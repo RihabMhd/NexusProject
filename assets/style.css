@@ -493,6 +493,7 @@ form input {
   border-radius: 10px;
   background-color: #14141E;
   color: #b0b0b0;
+  height: 40px;
 }
 
 form textarea {
@@ -500,6 +501,7 @@ form textarea {
   border-radius: 10px;
   background-color: #14141E;
   color: #b0b0b0;
+  height: 100px;
 }
 
 form div {
