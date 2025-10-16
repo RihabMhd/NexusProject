@@ -484,6 +484,12 @@ form {
   padding-top: 4rem;
 }
 
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 217, 255, 0.2);
+  border-color: rgba(0, 217, 255, 0.3);
+}
+
 form label {
   font-size: 1.2rem;
 }
@@ -493,7 +499,21 @@ form input {
   border-radius: 10px;
   background-color: #14141E;
   color: #b0b0b0;
+  font-size: 1.2rem;
   height: 40px;
+}
+
+form select {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #14141E;
+  color: #b0b0b0;
+  height: 40px;
+  text-align: center;
+}
+
+form select option {
+  font-size: 1.2rem;
 }
 
 form textarea {
@@ -502,6 +522,7 @@ form textarea {
   background-color: #14141E;
   color: #b0b0b0;
   height: 100px;
+  font-size: 1.2rem;
 }
 
 form div {
