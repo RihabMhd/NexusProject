@@ -118,7 +118,7 @@ nav {
 }
 
 
-.overlay,
+.hero__overlay,
 .text {
   position: absolute;
   top: 50%;
@@ -131,7 +131,7 @@ nav {
   max-width: 900px;
 }
 
-.overlay h1,
+.hero__overlay h1,
 .text h1 {
   font-size: 5rem;
   margin-bottom: 20px;
@@ -141,7 +141,7 @@ nav {
   text-shadow: 0 4px 20px rgba(0, 217, 255, 0.3);
 }
 
-.overlay h3,
+.hero__overlay h3,
 .text h3 {
   font-weight: 400;
   font-size: 1.2rem;
@@ -151,7 +151,7 @@ nav {
   letter-spacing: 0.2rem;
 }
 
-.hero-buttons,
+.hero__buttons,
 .text {
   display: flex;
   gap: 20px;
@@ -176,8 +176,8 @@ nav {
   box-shadow: 0 10px 35px rgba(0, 217, 255, 0.6);
 }
 
-.btn-primary,
-.btn-secondary {
+.button--primary,
+.button--secondary {
   border: none;
   padding: 15px 35px;
   border-radius: 30px;
@@ -190,24 +190,24 @@ nav {
   letter-spacing: 0.2rem;
 }
 
-.btn-primary {
+.button--primary {
   background: linear-gradient(135deg, #00D9FF 0%, #0099CC 100%);
   color: white;
   box-shadow: 0 6px 25px rgba(0, 217, 255, 0.4);
 }
 
-.btn-primary:hover {
+.button--primary:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 35px rgba(0, 217, 255, 0.6);
 }
 
-.btn-secondary {
+.button--secondary {
   background: transparent;
   color: white;
   border: 2px solid #00D9FF;
 }
 
-.btn-secondary:hover {
+.button--secondary:hover {
   background: rgba(0, 217, 255, 0.1);
   transform: translateY(-3px);
 }
@@ -247,10 +247,10 @@ span {
   margin: 0 auto;
 }
 
-.cardTournaments,
-.cardTeams,
-.cardGames,
-.cardBlog {
+.tournament-card,
+.team-card,
+.game-card,
+.blog-card {
   background-color: #14141E;
   border-radius: 12px;
   padding: 0;
@@ -262,10 +262,10 @@ span {
   position: relative;
 }
 
-.cardTournaments::after,
-.cardTeams::after,
-.cardGames::after,
-.cardBlog::after {
+.tournament-card::after,
+.team-card::after,
+.game-card::after,
+.blog-card::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -277,16 +277,16 @@ span {
   transition: opacity 0.4s ease;
 }
 
-.cardTournaments:hover::after,
-.cardTeams:hover::after,
-.cardGames:hover::after,
-.cardBlog:hover::after {
+.tournament-card:hover::after,
+.team-card:hover::after,
+.game-card:hover::after,
+.blog-card:hover::after {
   opacity: 1;
 }
 
-.cardTournaments img,
-.cardTeams img,
-.cardBlog img {
+.tournament-card__image,
+.team-card__image,
+.blog-card__image {
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -295,12 +295,12 @@ span {
   display: block;
 }
 
-.cardGames {
+.game-card {
   position: relative;
   height: 380px;
 }
 
-.cardGames img {
+.game-card__image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -312,7 +312,7 @@ span {
   left: 0;
 }
 
-.cardGames .game-overlay {
+.game-card .game-card__overlay {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -325,12 +325,12 @@ span {
   z-index: 2;
 }
 
-.cardGames:hover .game-overlay {
+.game-card:hover .game-card__overlay {
   opacity: 1;
   transform: translateY(0);
 }
 
-.cardGames .game-overlay h3 {
+.game-card .game-card__title {
   font-size: 1.4rem;
   color: #FFFFFF;
   margin: 0 0 10px 0;
@@ -338,7 +338,7 @@ span {
   padding: 0;
 }
 
-.cardGames .game-overlay p {
+.game-card .game-card__description {
   color: #C5C5D0;
   font-size: 0.9rem;
   line-height: 1.5;
@@ -346,24 +346,24 @@ span {
   padding: 0;
 }
 
-.cardGames .card-meta {
+.game-card .game-card__meta {
   padding: 0 0 15px 0;
 }
 
-.cardGames .view-btn {
+.game-card .view-btn {
   margin: 0;
 }
 
-.cardTournaments:hover img,
-.cardTeams:hover img,
-.cardGames:hover img,
-.cardBlog:hover img {
+.tournament-card__image:hover,
+.team-card__image:hover,
+.game-card__image:hover,
+.blog-card_.blog-card__image{
   transform: scale(1.05);
 }
 
-.cardTournaments h3,
-.cardTeams h3,
-.cardBlog h3 {
+.tournament-card__title,
+.team-card__title,
+.blog-card__title {
   padding: 20px 20px 0 20px;
   font-size: 1.15rem;
   color: #FFFFFF;
@@ -372,9 +372,9 @@ span {
   line-height: 1.4;
 }
 
-.cardTournaments p,
-.cardTeams p,
-.cardBlog p {
+.tournament-card__description,
+.team_card__description,
+.blog-card__description {
   padding: 12px 20px 0 20px;
   color: #8B8B9A;
   font-size: 0.88rem;
@@ -382,10 +382,10 @@ span {
   margin: 0;
 }
 
-.cardTournaments .card-meta,
-.cardTeams .card-meta,
-.cardGames .card-meta,
-.cardBlog .card-meta {
+.tournament-card .tournament-card__meta,
+.team-card .team-card__meta,
+.game-card .game-card__meta,
+.blog-card .blog-card__meta {
   padding: 15px 20px 20px 20px;
   display: flex;
   align-items: center;
@@ -394,16 +394,16 @@ span {
   color: #6B6B7A;
 }
 
-.card-meta span {
+.tournament-card__location.tournament-card__date {
   display: flex;
   align-items: center;
   gap: 5px;
 }
 
-.cardTournaments .view-btn,
-.cardTeams .view-btn,
-.cardGames .view-btn,
-.cardBlog .view-btn {
+.tournament-card .view-btn,
+.team-card .view-btn,
+.game-card .view-btn,
+.blog-card .view-btn {
   margin: 0 20px 20px 20px;
   padding: 10px 0;
   background: transparent;
@@ -419,18 +419,18 @@ span {
   text-decoration: none;
 }
 
-.cardTournaments .view-btn:hover,
-.cardTeams .view-btn:hover,
-.cardGames .view-btn:hover,
-.cardBlog .view-btn:hover {
+.tournament-card .view-btn:hover,
+.team-card .view-btn:hover,
+.game-card .view-btn:hover,
+.blog-card .view-btn:hover {
   background: rgba(139, 92, 246, 0.1);
   border-color: #8B5CF6;
 }
 
-.cardTournaments:hover,
-.cardTeams:hover,
-.cardGames:hover,
-.cardBlog:hover {
+.tournament-card:hover,
+.team-card:hover,
+.game-card:hover,
+.blog-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 40px rgba(0, 217, 255, 0.2);
   border-color: rgba(0, 217, 255, 0.3);
@@ -453,14 +453,14 @@ span {
   box-shadow: 0 10px 50px rgba(0, 217, 255, 0.15);
 }
 
-.signin-card h2 {
+.signin-card__title {
   color: #00D9FF;
   margin-bottom: 20px;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
-.signin-card p {
+.signin-card__description {
   color: #C5C5D0;
   margin-bottom: 35px;
   font-size: 1.2rem;
@@ -540,7 +540,7 @@ footer p {
   width: 20rem;
 }
 
-.FooterParents {
+.Footer {
   max-width: 1400px;
   margin: 0 30px 0 30px;
   padding: 0 40px 50px 40px;
@@ -582,11 +582,11 @@ footer p {
   font-size: 18px;
 }
 
-.FooterParents ul {
+.Footer ul {
   list-style: none;
 }
 
-.FooterParents ul li {
+.Footer ul li {
   margin-bottom: 12px;
   color: #b0b0b0;
   cursor: pointer;
@@ -594,11 +594,11 @@ footer p {
   font-size: 1rem;
 }
 
-.pages ul li a {
+.Footer-pages__link {
   text-decoration: none;
 }
 
-.FooterParents ul li:hover {
+.Footer ul li:hover {
   color: #7c3aed;
   padding-left: 5px;
 }
@@ -611,7 +611,7 @@ footer p {
   gap: 90px;
 }
 
-.contact-info a {
+.contact-item__link {
   text-decoration: none;
   letter-spacing: 2px;
 }

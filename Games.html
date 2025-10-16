@@ -36,9 +36,9 @@
     </nav>
   </header>
 
-    <section class="hero container-fluid">
+  <section class="hero container-fluid">
     <img src="./assets/images/Cyberpunk Arena.webp" alt="Cyberpunk Arena" height="50%" style="margin-bottom: 20rem;">
-    <div class="overlay" style="padding-bottom: 15rem;">
+    <div class="hero__overlay" style="padding-bottom: 15rem;">
       <h1>Games</h1>
       <h3>Compete in the most popular competitive games across all genres</h3>
     </div>
@@ -47,108 +47,117 @@
   <section class="games" style="margin-top: -22rem;">
 
     <div class="card-container pt-5">
-      <div class="cardGames">
-        <img src="./assets/images/game1.webp" alt="Game 1">
-        <div class="game-overlay">
-          <h3>Valorant</h3>
-          <p>Tactical 5v5 shooter with unique agents and abilities</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>FPS</span>
-            <span><i class="fa-solid fa-people-group"></i>5v5</span>
+
+      <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game1.webp" alt="Game 1">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">Valorant</h3>
+          <p class="game-card__description">Tactical 5v5 shooter with unique agents and abilities</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>FPS</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>5v5</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
-      <div class="cardGames">
-        <img src="./assets/images/game2.webp" alt="Game 2">
-        <div class="game-overlay">
-          <h3>League of Legends</h3>
-          <p>Strategic MOBA with diverse champions and intense battles</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>MOBA</span>
-            <span><i class="fa-solid fa-people-group"></i>5v5</span>
+
+      <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game2.webp" alt="Game 2">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">League of Legends</h3>
+          <p class="game-card__description">Strategic MOBA with diverse champions and intense battles</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>MOBA</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>5v5</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
-      <div class="cardGames">
-        <img src="./assets/images/game3.webp" alt="Game 3">
-        <div class="game-overlay">
-          <h3>Fortnite</h3>
-          <p>Battle royale with building mechanics and constant updates</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>Battle Royale</span>
-            <span><i class="fa-solid fa-people-group"></i>100 Players</span>
+
+      <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game3.webp" alt="Game 3">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">Fortnite</h3>
+          <p class="game-card__description">Battle royale with building mechanics and constant updates</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>Battle Royale</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>100 Players</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
-      <div class="cardGames">
-        <img src="./assets/images/game4.webp" alt="Game 4">
-        <div class="game-overlay">
-          <h3>CS2</h3>
-          <p>Classic tactical shooter redefined with next-gen graphics</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>FPS</span>
-            <span><i class="fa-solid fa-people-group"></i>5v5</span>
+
+      <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game4.webp" alt="Game 4">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">CS2</h3>
+          <p class="game-card__description">Classic tactical shooter redefined with next-gen graphics</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>FPS</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>5v5</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
-      <div class="cardGames">
-        <img src="./assets/images/game1.webp" alt="Game 1">
-        <div class="game-overlay">
-          <h3>Valorant</h3>
-          <p>Tactical 5v5 shooter with unique agents and abilities</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>FPS</span>
-            <span><i class="fa-solid fa-people-group"></i>5v5</span>
+
+       <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game1.webp" alt="Game 1">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">Valorant</h3>
+          <p class="game-card__description">Tactical 5v5 shooter with unique agents and abilities</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>FPS</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>5v5</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
-      <div class="cardGames">
-        <img src="./assets/images/game2.webp" alt="Game 2">
-        <div class="game-overlay">
-          <h3>League of Legends</h3>
-          <p>Strategic MOBA with diverse champions and intense battles</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>MOBA</span>
-            <span><i class="fa-solid fa-people-group"></i>5v5</span>
+
+      <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game2.webp" alt="Game 2">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">League of Legends</h3>
+          <p class="game-card__description">Strategic MOBA with diverse champions and intense battles</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>MOBA</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>5v5</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
-      <div class="cardGames">
-        <img src="./assets/images/game3.webp" alt="Game 3">
-        <div class="game-overlay">
-          <h3>Fortnite</h3>
-          <p>Battle royale with building mechanics and constant updates</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>Battle Royale</span>
-            <span><i class="fa-solid fa-people-group"></i>100 Players</span>
+
+      <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game3.webp" alt="Game 3">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">Fortnite</h3>
+          <p class="game-card__description">Battle royale with building mechanics and constant updates</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>Battle Royale</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>100 Players</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
-      <div class="cardGames">
-        <img src="./assets/images/game4.webp" alt="Game 4">
-        <div class="game-overlay">
-          <h3>CS2</h3>
-          <p>Classic tactical shooter redefined with next-gen graphics</p>
-          <div class="card-meta">
-            <span><i class="fa-solid fa-gamepad"></i>FPS</span>
-            <span><i class="fa-solid fa-people-group"></i>5v5</span>
+
+      <div class="game-card">
+        <img class="game-card__image" src="./assets/images/game4.webp" alt="Game 4">
+        <div class="game-card__overlay">
+          <h3 class="game-card__title">CS2</h3>
+          <p class="game-card__description">Classic tactical shooter redefined with next-gen graphics</p>
+          <div class="game-card__meta">
+            <span class="game-card__type"><i class="fa-solid fa-gamepad"></i>FPS</span>
+            <span class="game-card__group"><i class="fa-solid fa-people-group"></i>5v5</span>
           </div>
           <a href="#" class="view-btn">Explore Game</a>
         </div>
       </div>
+      
     </div>
   </section>
 
 
 
-<footer>
+  <footer>
     <div class="FooterParents">
 
       <div>
