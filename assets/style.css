@@ -3,7 +3,7 @@ body {
   margin: 0;
   font-weight: 400;
   font-style: normal;
-  font-family: "Jersey 10", sans-serif;
+  font-family: 'Jersey 10', Arial, sans-serif;
   color: #fff;
 }
 
@@ -15,7 +15,7 @@ nav {
   padding: 20px 60px;
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 1;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(0, 170, 255, 0.2);
 }
@@ -99,24 +99,17 @@ nav {
 .hero {
   position: relative;
   width: 100%;
-  min-height: 100vh;
-  height: 800px;
-  margin-top: -80px;
-  overflow: hidden;
+  min-height: 100vh; 
+  height: 100%;
+  background-image: url('./images/CyberpunkArena.webp');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 0;
+  overflow: hidden;
 }
-
-.hero img {
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  display: block;
-  filter: brightness(0.5);
-}
-
 
 .hero__overlay,
 .text {
@@ -134,10 +127,8 @@ nav {
 .hero__overlay h1,
 .text h1 {
   font-size: 5rem;
-  margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.2;
-  margin-top: -4rem;
   text-shadow: 0 4px 20px rgba(0, 217, 255, 0.3);
 }
 
@@ -357,7 +348,7 @@ span {
 .tournament-card__image:hover,
 .team-card__image:hover,
 .game-card__image:hover,
-.blog-card__image:hover{
+.blog-card__image:hover {
   transform: scale(1.05);
 }
 
