@@ -357,7 +357,7 @@ span {
 .tournament-card__image:hover,
 .team-card__image:hover,
 .game-card__image:hover,
-.blog-card_.blog-card__image{
+.blog-card__image:hover{
   transform: scale(1.05);
 }
 
@@ -373,7 +373,7 @@ span {
 }
 
 .tournament-card__description,
-.team_card__description,
+.team-card__description,
 .blog-card__description {
   padding: 12px 20px 0 20px;
   color: #8B8B9A;
@@ -529,20 +529,20 @@ form div {
   padding-bottom: 10px;
 }
 
-footer {
+.footer {
   background: #0A0A0F;
   color: #e0e0e0;
   padding: 60px 0 0 0;
   border-top: 1px solid #00D9FF;
 }
 
-footer p {
+.footer__description {
   width: 20rem;
 }
 
-.Footer {
+.footer__container {
   max-width: 1400px;
-  margin: 0 30px 0 30px;
+  margin: 0 30px;
   padding: 0 40px 50px 40px;
   display: flex;
   justify-content: space-around;
@@ -550,14 +550,14 @@ footer p {
   flex-wrap: wrap;
 }
 
-
-
-.Footer-social-media {
+.footer__social-list {
   display: flex;
   gap: 15px;
+  list-style: none;
+  padding: 0;
 }
 
-.Footer-social-media a {
+.footer__social-link {
   width: 40px;
   height: 40px;
   background: #242424;
@@ -571,52 +571,50 @@ footer p {
   text-decoration: none;
 }
 
-.Footer-social-media a:hover {
+.footer__social-link:hover {
   background: #00D9FF;
   border-color: #00D9FF;
   transform: translateY(-3px);
 }
 
-.social-icons i {
+.footer__social-link i {
   color: #e0e0e0;
   font-size: 18px;
 }
 
-.Footer ul {
+.footer__column-list {
   list-style: none;
+  padding: 0;
 }
 
-.Footer ul li {
+.footer__column-item {
   margin-bottom: 12px;
   color: #b0b0b0;
-  cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1rem;
 }
 
-.Footer-pages__link {
+.footer__column-link {
   text-decoration: none;
+  color: inherit;
 }
 
-.Footer ul li:hover {
+.footer__column-item:hover {
   color: #7c3aed;
   padding-left: 5px;
 }
 
-.contact-info {
+.footer__contact {
   margin: 0 auto;
   padding: 20px 20px;
   width: 60rem;
   display: flex;
   gap: 90px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.contact-item__link {
-  text-decoration: none;
-  letter-spacing: 2px;
-}
-
-.contact-item {
+.footer__contact-item {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -624,19 +622,35 @@ footer p {
   min-width: 200px;
 }
 
-.contact-item i {
+.footer__contact-icon {
   color: #00D9FF;
   font-size: 1rem;
   margin-bottom: 5px;
 }
 
-.copyright {
+.footer__contact-link {
+  text-decoration: none;
+  letter-spacing: 2px;
+  color: #e0e0e0;
+}
+
+.footer__contact-link:hover {
+  color: #00D9FF;
+}
+
+.footer__divider {
+  border: none;
+  border-top: 1px solid #1a1a1a;
+  margin: 30px 0;
+}
+
+.footer__copyright {
   background: #0a0a0a;
   padding: 25px 40px;
   text-align: center;
 }
 
-.copyright-content {
+.footer__copyright-content {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
@@ -646,24 +660,24 @@ footer p {
   gap: 20px;
 }
 
-.copyright p {
+.footer__copyright-text {
   color: #808080;
   font-size: 1rem;
   margin: 0;
 }
 
-.footer-links {
+.footer__copyright-links {
   display: flex;
   gap: 25px;
 }
 
-.footer-links a {
+.footer__copyright-link {
   color: #808080;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
+.footer__copyright-link:hover {
   color: #7c3aed;
 }
